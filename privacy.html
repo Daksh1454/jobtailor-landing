@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — JobTailor AI</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #171a2b;
+    background: #f6f7fb;
+  }
+  header {
+    background: linear-gradient(135deg, #312e81, #4338ca 60%, #4f46e5);
+    color: #fff;
+    padding: 48px 24px 56px 24px;
+    text-align: center;
+  }
+  header h1 { font-size: 28px; margin: 0 0 8px 0; }
+  header p { font-size: 14px; color: rgba(255,255,255,0.75); margin: 0; }
+  main {
+    max-width: 720px;
+    margin: -28px auto 0 auto;
+    padding: 0 24px 64px 24px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e6e8f0;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 16px rgba(23,26,43,0.06);
+  }
+  h2 { font-size: 18px; margin: 28px 0 10px 0; }
+  h2:first-child { margin-top: 0; }
+  p, li { color: #4a4f66; line-height: 1.65; font-size: 14.5px; }
+  ul { padding-left: 20px; }
+  a { color: #4f46e5; }
+  .updated { color: #6b7086; font-size: 13px; margin-bottom: 24px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>JobTailor AI — Chrome Extension</p>
+  </header>
+  <main>
+    <div class="card">
+      <p class="updated">Last updated: July 2026</p>
+
+      <p>JobTailor AI ("the extension") helps you tailor your resume and cover letter to job postings using AI. This page explains what data the extension accesses, stores, and sends, and to whom.</p>
+
+      <h2>What the extension reads from web pages</h2>
+      <p>When you open the extension on a job posting page, its content script reads the visible text of that page (job title, company name, and description) so it can be used to tailor your resume and cover letter. It does not read pages in the background — this only happens when you actively open the extension on a tab.</p>
+
+      <h2>What's stored locally on your device</h2>
+      <p>The following is saved using Chrome's local storage, on your device only, and is never transmitted anywhere except as described below:</p>
+      <ul>
+        <li>Your base resume text (as you paste it into Settings)</li>
+        <li>Your own Claude API key, if you choose to bring your own key instead of subscribing</li>
+        <li>Your subscription email and access token, if you subscribe</li>
+        <li>A log of applications you choose to save (job title, company, URL, date)</li>
+        <li>The most recent tailored result, so it's there if you reopen the extension on the same job</li>
+      </ul>
+
+      <h2>What gets sent, and to whom</h2>
+      <p>To generate a tailored resume or cover letter, your base resume text and the detected job posting content are sent to one of the following, depending on which mode you use:</p>
+      <ul>
+        <li><strong>Bring-your-own-key mode:</strong> sent directly from your browser to Anthropic's Claude API (api.anthropic.com), using your own API key. We never see this data.</li>
+        <li><strong>Subscription mode:</strong> sent to JobTailor AI's backend server, which forwards it to Anthropic's Claude API using our API key, generates the result, and returns it to you. This data is not stored on our server beyond what's needed to process that single request.</li>
+      </ul>
+      <p>If you subscribe, your email address is also sent to Stripe to process payment and to our backend to activate your subscription. We store your email, a generated access token, and your subscription status (active/inactive) in our database, so your subscription persists across sessions. We do not store your resume text or job posting content server-side.</p>
+
+      <h2>What we don't do</h2>
+      <ul>
+        <li>We don't sell your data to anyone.</li>
+        <li>We don't use your resume or job data for anything other than generating the tailored result you asked for.</li>
+        <li>We don't track your browsing activity beyond the single job-posting page you open the extension on.</li>
+        <li>We don't share your data with advertisers.</li>
+      </ul>
+
+      <h2>Third parties involved</h2>
+      <ul>
+        <li><strong>Anthropic</strong> (api.anthropic.com) — processes your resume/job content to generate results. See <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic's privacy policy</a>.</li>
+        <li><strong>Stripe</strong> — processes subscription payments. JobTailor AI never sees or stores your card details. See <a href="https://stripe.com/privacy" target="_blank">Stripe's privacy policy</a>.</li>
+      </ul>
+
+      <h2>Your choices</h2>
+      <p>You can delete everything the extension has stored locally at any time by removing the extension, or by clearing its data via Chrome's extension settings. You can sign out of your subscription at any time from the extension's Settings tab, which removes your stored email/token from your device.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy or your data: <a href="mailto:dakshpatel1454@gmail.com">dakshpatel1454@gmail.com</a></p>
+    </div>
+  </main>
+</body>
+</html>
