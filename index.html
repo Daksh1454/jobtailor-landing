@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JobTailor AI — Resume &amp; Cover Letter Copilot</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #171a2b;
+    background: #f6f7fb;
+  }
+  header {
+    background: linear-gradient(135deg, #312e81, #4338ca 60%, #4f46e5);
+    color: #fff;
+    padding: 64px 24px 72px 24px;
+    text-align: center;
+  }
+  .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.16);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  header h1 { font-size: 34px; margin: 0 0 10px 0; }
+  header p { font-size: 17px; color: rgba(255,255,255,0.85); max-width: 480px; margin: 0 auto; }
+  main {
+    max-width: 720px;
+    margin: -40px auto 0 auto;
+    padding: 0 24px 64px 24px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e6e8f0;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(23,26,43,0.06);
+  }
+  .card h2 { margin-top: 0; font-size: 20px; }
+  .card p, .card li { color: #4a4f66; line-height: 1.6; font-size: 15px; }
+  .price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 8px 0 18px 0;
+  }
+  .price .amount { font-size: 40px; font-weight: 700; color: #171a2b; }
+  .price .period { font-size: 15px; color: #6b7086; }
+  ul { padding-left: 20px; }
+  footer {
+    text-align: center;
+    color: #6b7086;
+    font-size: 13px;
+    padding: 0 24px 48px 24px;
+  }
+  footer a { color: #4f46e5; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.5l2.2 5.3 5.7.5-4.3 3.8 1.3 5.6L12 14.9l-4.9 2.8 1.3-5.6-4.3-3.8 5.7-.5L12 2.5z" fill="#fbbf24"/>
+      </svg>
+    </div>
+    <h1>JobTailor AI</h1>
+    <p>An AI copilot that tailors your resume and cover letter to any job posting, in one click, right from your browser.</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>What it does</h2>
+      <p>JobTailor AI is a Chrome extension. Open any job listing — LinkedIn, Indeed, Greenhouse, Lever, and more — and it reads the posting, then rewrites your resume and cover letter to match it: relevant experience surfaced first, key terminology mirrored naturally, every fact still truthful to your real background.</p>
+      <ul>
+        <li>Detects the job title, company, and description automatically</li>
+        <li>Generates a tailored resume, laid out to match your existing format, auto-fit to one page</li>
+        <li>Generates a matching, professional cover letter</li>
+        <li>Downloads both as ready-to-send PDFs</li>
+        <li>Keeps a running log of every application you've tailored</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Pricing</h2>
+      <div class="price">
+        <span class="amount">$12</span>
+        <span class="period">/ month</span>
+      </div>
+      <p>No API key to manage, no setup — subscribe and go. (Prefer to use your own Claude API key instead? The extension supports that too, at no charge.)</p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 JobTailor AI. All rights reserved.
+  </footer>
+</body>
+</html>
